@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<style>
+			* {
+				margin:0;
+			}
+			.one {
+				width:200px;
+				height:0;
+				background-color:transparent;
+				margin:60px;
+				border-top:50px solid transparent;
+				border-right:50px solid #e6e636f2;
+				border-bottom:50px solid #cc0033;
+				border-left:50px solid #ff9999;
+			}
+			.two {
+				width:0px;
+				height:0px;
+				background-color:transparent;
+				margin:60px;
+				border-top:50px solid transparent;
+				border-right:50px solid transparent;
+				border-bottom:50px solid #cc0033;
+				border-left:50px solid #ff9999;
+			}
+			.three  {
+				width:200px;
+				height:0;
+				background-color:transparent;
+				margin:60px;
+				border-top:50px solid #cc6600;
+				border-right:50px solid transparent;
+				border-bottom:50px solid #cc6600;
+				border-left:50px solid transparent;
+			}
+			.four {
+				width:0px;
+				height:0;
+				background-color:transparent;
+				margin:60px;
+				border-top:50px solid #ff66cc;
+				border-right:50px solid #e6e636f2;
+				border-bottom:50px solid transparent;
+				border-left:50px solid transparent;
+			}
+			.five {
+				width:200px;
+				height:0;
+				background-color:transparent;
+				margin:60px;
+				border-top:50px solid transparent;
+				border-right:50px solid transparent;
+				border-bottom:50px solid transparent;
+				border-left:50px solid #cc0033;
+			}
+			.six {
+				width:200px;
+				height:100px;
+				background-color:transparent;
+				margin:60px;
+				border-top:50px solid #ef8a00;
+				border-right:50px solid transparent;
+				border-bottom:50px solid transparent;
+				border-left:50px solid transparent;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="one"></div>
+		<div class="two"></div>
+		<div class="three"></div>
+		<div class="four"></div>
+		<div class="five"></div>
+		<div class="six"></div>
+	</body>
+</html>

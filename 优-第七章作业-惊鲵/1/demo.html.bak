@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Author" content="惊鲵">
+		<title>Document</title>
+			<style>
+				* {
+					margin:0;
+				}
+				.main {
+					width:222px;
+					height:364px;
+					background-color:#252525;
+					margin:80px auto;
+					border:1px solid #646464;
+				}	
+				.main .one {
+					width:40px;
+					height:40px;
+					background-color:white;
+					margin:0 0 3px 78px;
+				}
+				.main>#min {
+					margin:62px 0 3px 78px;	
+					background-image:url("./images/1.png");
+					background-position:240px  121px ;
+				} 
+				.main>#two {
+					background-image:url("./images/1.png");
+					background-position:320px  200px ;
+				}
+				.main>#three {
+					background-image:url("./images/1.png");
+					background-position:320px  160px ;
+				}
+				.main>#four {
+					background-image:url("./images/1.png");
+					background-position:320px  80px ;
+				}
+				.main>#five{
+					background-image:url("./images/1.png");
+					background-position:320px  80px ;
+				}
+			</style>
+	</head>
+	<body>
+		<div class="main">
+			<div class="one" id="min"></div>	
+		    <div class="one" id="two"></div>
+			<div class="one" id="three"></div>
+			<div class="one" id="four"></div>
+			<div class="one" id="five"></div>
+		</div>
+	</body>
+</html>

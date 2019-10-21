@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Author" content="">
+		<title>Document</title>
+		<style>
+			* {
+				margin:0;
+			}
+			ul {
+				list-style:none;
+				padding-left:0;
+			}
+			dl {
+				list-style:none;
+				padding-left:0;
+			}
+			.gf {
+				position:relative;
+				width:100%;
+				height:340px;
+				margin:70px auto;
+				background-image:url(./images/1.png);
+				background-position:center center; 
+				background-repeat:no repeat;
+				background-size:cover;
+				border:2px solid #ccffff; 
+			}
+			.nav {
+				width:208px;
+				height:340px;
+				background-color:#272a38;
+				margin-left:50px;
+			}
+			.nav>li {
+				width:208px;
+				height:68px;
+				line-height:68px;
+				font-size:18px;
+				color:#fff;
+				text-align:center;
+			}
+			.nav>li>img {
+				width:18px;
+				height:18px;
+				vertical-align:middle;
+				margin:0 20px 0 0 ;
+			}
+			ul li:hover{
+				background-color:#47484c;
+			} 
+			.classic {
+				position:absolute;
+				display:none;  
+				width:800px;
+				height:340px;
+				background-color:orange;
+				margin:50px auto;
+				border:1px solid orange;
+				top:-50px;
+				left:257px; 
+			}
+			.three {
+				height:450px;
+			}
+			.four {
+				width:600px;
+				height:700px;	
+			} 
+			.gf .nav span:hover  ~.classic{
+				display:block;
+			} 
+			.small {
+				width:750px;
+				height:38px;
+				margin:8px auto;
+			}
+			.big {
+				width:750px;
+				height:50px;
+				margin:8px auto;
+			}
+			.f {
+				float:left;
+				vertical-align:middle;
+			}
+			.title {
+				width:150px;
+				height:23px;
+				line-height:23px;
+				text-align:left;
+				padding-left:30px;
+			}
+			.con {
+				width:55px;
+				height:15px;
+				line-height:23px;
+				border-left:2px solid gray;
+			}
+			.con1 {
+				width:150px;
+				height:23px;
+				line-height:23px;
+				text-align:center; 
+				border-left:2px solid gray;
+			}
+			.special {
+				margin-left:180px;
+			}
+			.f:hover {
+				color:#fff;
+			}
+			.e {
+				width:80px;
+				line-height:23px;
+				text-align:center; 
+				border-left:2px solid gray;
+			}
+		</style>
+	</head>
+   <body>
+		<div class="gf">
+			<ul class="nav">
+				<li class="change">
+					<span><img src="./images/2.png">
+					<span>IT互联网</span></span>
+					<div class="classic">
+						<div class="small">
+							<ul class="bp">
+								<li class="f title">编程语言</li>
+								<li class="f con">C</li>
+								<li class="f con">PHP</li>
+								<li class="f con">Python</li>
+								<li class="f con">C++</li>
+								<li class="f con">Java</li>
+								<li class="f con">Linux</li> 
+							</ul>
+						</div>
+						<div class="big">
+							<ul class="bp">
+								<li class="f title">互联网运营</li>
+								<li class="f con1">新媒体运营</li>
+								<li class="f con1">SEO</li>
+								<li class="f con1">SEM</li>
+								<li class="f con1 special">网络营销</li>
+								<li class="f con1 " id="c">天猫运营</li>
+								<li class="f con1">营销实战</li>
+							</ul>
+						</div>
+						<div class="small">
+							<ul class="bp">
+								<li class="f title">前端开发</li>
+								<li class="f con1">JavaScript</li>
+								<li class="f con1">Div</li>
+							</ul>
+						</div>
+						<div class="small">
+							<ul class="bp">
+								<li class="f title">移动开发</li>
+								<li class="f con1">Android</li>
+								<li class="f con1">iOS</li>
+							</ul>
+						</div>
+						<div class="small">
+							<ul class="bp">
+								<li class="f title">游戏开发</li>
+								<li class="f con1">Cocos2d-x游戏开发</li>
+								<li class="f con1">Unity3d游戏开发</li>
+							</ul>
+						</div>
+						<div class="small">
+							<ul class="bp">
+								<li class="f title">云计算大数据</li>
+								<li class="f con1">大数据</li>
+								<li class="f con1">区块链</li>
+								<li class="f con1">人工智能</li>
+							</ul>
+						</div> 
+					</div>
+				</li>
+				<li class="change">
+					<img src="./images/3.png">
+					<span>设计创作</span>
+					<div class="classic">
+						<div class="big">
+							<ul class="bp">
+								<li class="f title">视觉设计</li>
+								<li class="f con1">平面设计</li>
+								<li class="f con1">Photoshop</li>
+								<li class="f con1">UI设计</li>
+								<li class="f con1 special">服装设计</li>
+								<li class="f con1 " id="c">淘宝美工</li>
+							</ul>
+						</div>
+						<div class="small">
+							<ul class="bp">
+								<li class="f title">游戏动漫</li>
+								<li class="f con1">游戏模型</li>
+								<li class="f con1">插画</li>
+								<li class="f con1">游戏原画</li>
+							</ul>
+						</div>
+						<div class="small">
+							<ul class="bp">
+								<li class="f title">摄影</li>
+								<li class="f con1">影视后期</li>
+								<li class="f con1">摄影拍摄</li>
+								<li class="f con1">后期修图</li>
+							</ul>
+						</div>
+						<div class="small">
+							<ul class="bp">
+								<li class="f title">环境艺术</li>
+								<li class="f con1">室内设计</li>
+								<li class="f con1">建筑设计</li>
+							</ul>
+						</div>
+						<div class="big">
+							<ul class="bp">
+								<li class="f title">工业设计</li>
+								<li class="f con1">塑胶模具设计</li>
+								<li class="f con1">五金模具设计</li>
+								<li class="f con1">机械设计</li>
+								<li class="f con1 special">UG产品设计</li>
+								<li class="f con1">CADUG编程</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li>
+					<img src="./images/4.png">
+					<span>实用外语</span>
+					<div class="classic three">
+						<div class="small">
+							<ul class="bp">
+								<li class="f title">英语</li>
+								<li class="f con1">平面设计</li>
+								<li class="f con1">英语口语</li>
+							</ul>
+						</div>
+						<div class="big">
+							<ul class="bp">
+								<li class="f title">日语</li>
+								<li class="f con1">日语零基础</li>
+								<li class="f con1">日语初级</li>
+								<li class="f con1">日语中级</li>
+								<li class="f con1 special">日语高级</li>
+							</ul>
+						</div>
+						<div class="small">
+							<ul class="bp">
+								<li class="f title">韩语</li>
+								<li class="f con1">韩语零基础</li>
+								<li class="f con1">韩语初级</li>
+								<li class="f con1">韩语中级</li>
+								<li class="f con1 special">韩语高级</li>
+							</ul>
+						</div>
+						<div class="small">
+							<ul class="bp">
+								<li class="f title">法语</li>
+								<li class="f con1">法语初级</li>
+								<li class="f con1">法语中级</li>
+								<li class="f con1">法语高级</li>
+								<li class="f con1 special">法语发音班</li>
+								<li class="f con1">韩语零基础</li>
+							</ul>
+						</div>
+						<div class="small">
+							<ul class="bp">
+								<li class="f title">泰语</li>
+								<li class="f con1">泰语初级</li>
+								<li class="f con1">泰语中级</li>
+								<li class="f con1">泰语高级</li>
+							</ul>
+						</div>
+						<div class="small">
+							<ul class="bp">
+								<li class="f title">西班牙语</li>
+								<li class="f con1">西班牙语初级</li>
+								<li class="f con1">西班牙语中级</li>
+								<li class="f con1">西班牙语高级</li>
+							</ul> 
+						</div> 
+						<div class="small">
+							<ul class="bp">
+								<li class="f title">德语</li>
+								<li class="f con1">西班牙语中级</li>
+							</ul> 
+						</div> 
+						<div class="small">
+							<ul class="bp">
+								<li class="f title">对外汉语</li>
+								<li class="f con1">基础汉语</li>
+								<li class="f con1">高级汉语</li>
+							</ul> 
+						</div> 
+					</div>
+				</li>
+				<li>
+					<img src="./images/5.png">
+					<span>兴趣艺术</span>
+					<div class="classic four">
+						<div class="big">
+							<ul class="bp">
+								<li class="f title">美术</li>
+								<li class="e f ">素描</li>
+								<li class="e f">彩铅</li>
+								<li class="e f ">水彩</li>
+								<li class="e f ">油画</li>
+								<li class="e f ">手绘</li>
+								<li class="e f ">手绘</li>
+								<li class="e f ">国画</li>
+								<li class="e f ">书法</li>
+							</ul>
+						</div>
+						<div class="small">
+							<ul class="bp">
+								<li class="f title">音乐</li>
+								<li class="f e">钢琴</li>
+								<li class="f e">二胡</li>
+								<li class="f e">古筝</li>
+								<li class="f e ">声乐</li>
+							</ul>
+						</div>
+						<div class="small">
+							<ul class="bp">
+								<li class="f title">生活百科</li>
+								<li class="f con1">生活技巧</li>
+								<li class="f con1">兴趣爱好</li>
+							</ul>
+						</div>
+						<div class="small">
+							<ul class="bp">
+								<li class="f title">播音主持</li>
+								<li class="f con1">主持朗诵</li>
+								<li class="f e">配音</li>
+								<li class="f con1">普通话</li>
+								<li class="f con1">声音美化</li>
+							</ul>
+						</div>
+						<div class="small">
+							<ul class="bp">
+								<li class="f title">成人教育</li>
+								<li class="f con1">高升专</li>
+								<li class="f con1">专升本</li>
+								<li class="f con1">高升本</li>
+								<li class="f e">自考</li>
+							</ul> 
+						</div> 
+						<div class="small">
+							<ul class="bp">
+								<li class="f title">职业资格证</li>
+								<li class="f con1">教师资格证</li>
+								<li class="f con1">注册消防工程师</li>
+								<li class="f con1">其他考证</li>
+							</ul> 
+						</div> 
+						<div class="big">
+							<ul class="bp">
+								<li class="f title">中小幼教育</li>
+								<li class="f e">美育</li>
+								<li class="f e">书法</li>
+								<li class="f con1">趣味语文</li>
+								<li class="f con1">趣味数学</li>
+								<li class="f con1 special">趣味英语</li>
+								<li class="f con1">亲子课堂</li>
+							</ul> 
+						</div>
+						<div class="small">
+							<ul class="bp">
+								<li class="f title">财会课堂</li>
+								<li class="f con1">会计培训</li>
+								<li class="f con1">零基础会计</li>
+								<li class="f con1">其他考证</li>
+							</ul> 
+						</div>
+						<div class="big">
+							<ul class="bp">
+								<li class="f title">职场指导</li>
+								<li class="f con1">办公软件</li>
+								<li class="f con1">就业指导</li>
+								<li class="f con1">职场管理</li>
+								<li class="f con1 special">职场心理学</li>
+							</ul> 
+						</div> 
+						<div class="small">
+								<ul class="bp">
+								<li class="f title">海外艺术</li>
+								<li class="f con1">艺术课程</li>
+								<li class="f con1">艺术合作</li>
+							</ul> 
+						</div> 
+					</div>
+				</li>
+				<li>
+					<img src="./images/6.png">
+					<span>农业生产</span>
+					<div class="classic">
+						<div class="small">
+							<ul class="bp">
+								<li class="f title">种植</li>
+								<li class="f con1">蔬菜种植</li>
+								<li class="f con1">果树种植</li>
+							</ul>
+						</div>
+						<div class="small">
+							<ul class="bp">
+								<li class="f title">水产养殖</li>
+								<li class="f con1">小龙虾养殖</li>
+								<li class="f con1">南美白对虾养殖</li>
+							</ul>
+						</div>
+						<div class="small">
+							<ul class="bp">
+								<li class="f title">畜牧养殖</li>
+								<li class="f con1">对虾养殖</li>
+								<li class="f e">养猪</li>
+								<li class="f e">养鸡</li>
+							</ul>
+						</div>
+						<div class="small">
+							<ul class="bp">
+								<li class="f title">经营管理</li>
+								<li class="f con1">水稻飞防</li>
+								<li class="f con1">农资经营</li>
+							</ul> 
+						</div>
+					</div>
+				</li> 
+			</ul>
+		</div>
+   </body>
+</html>

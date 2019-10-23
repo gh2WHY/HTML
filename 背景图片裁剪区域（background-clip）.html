@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<style>
+			.back {
+				width:300px;
+				height:300px;
+				margin:55px auto;
+				background-color:#58a;
+				padding:40px;
+				border:30px dashed orange;
+				background-image:url("http://img1.imgtn.bdimg.com/it/u=1540260043,1003790628&fm=26&gp=0.jpg");
+				/* 如果采取默认的背景图片平铺，则背景图片则会延伸到边框之下，如果不重复，则图片不会延伸至边框之 */
+				/* background-repeat:no-repeat; */
+				/* 从内容区开始剪裁图片，只显示内容区图片
+				background-clip:content-box;
+				 */
+				/*  从padding区开始剪裁图片，只显示内容区和内边距区图片
+				 				background-clip:padding-box;
+				  */
+				/*   显示内容区边框区和内边距区的图片 */
+				  background-clip:border-box;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="back">
+		</div>
+	</body>
+</html>
+

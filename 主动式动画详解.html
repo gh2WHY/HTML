@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Generator" content="EditPlus®">
+		<meta name="Author" content="惊鲵">
+		<meta name="Keywords" content="">
+		<meta name="Description" content="">
+		<title>Document</title>
+		<style>
+			* {
+				margin:0;
+			}
+			.controls {
+				width:50px;
+				height:50px;
+				background-color:orange;
+			}
+			.box {
+				width:300px;
+				height:300px;
+				background-color:orange;
+				margin:60px auto;
+				animation-name:demo; /* 引入动画名称 */
+				animation-duration:2s; /* 定义动画持续时间 */
+				animation-delay:1s; /* 定义1s后动画开始执行 */
+				/* animation-fill-mode:forwards; 定义动画执行结束后画面停留在最后一帧 */
+				animation-fill-mode:backforwards; /* 定义动画执行结束后画面恢复到第一帧 */
+				animation-iteration-count:infinite;  /* 定义动画播放次数,默认是1,infinite可无限次重复播放,可定义正整数负数和										零,定义负数时只播放一次 */
+				animation-direction:reverse; /* 定义动画的运行方向为方向运行
+				 */
+				animation-play-state:paused; /* 设置动画的默认执行方式是不执行 */
+			}
+			.controls:hover~ .box {
+				animation-play-state:running; /* 当鼠标位于controls盒子时,设置动画开始执行 */
+			}
+			@keyframes demo {
+				0% {
+					width:300px;
+					height:300px;
+					background-color:orange;
+				}
+				100% {
+					width:500px;
+					height:500px;
+					background-color:#99cc33;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="controls"></div>
+		<div class="box"></div>
+	</body>
+</html>
+

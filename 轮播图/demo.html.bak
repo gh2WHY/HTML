@@ -1,0 +1,95 @@
+
+<!doctype html><!--!在html中表示声明,document文档,type类型 文档类型-->
+<html><!--html开始标签-->
+	<head><!--头部标签-->
+		<title>我的第一个网页</title>
+		<meta charset="utf-8"><!--charset字符集-->
+		<meta name="keywords" content=""><!--content内容-->
+		<meta name="description" content=""><!--description描述--> 
+		<meta name="AUTH" content="旱麓"><!--AUTH author:作者-->
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			input{
+				display: none;
+			}
+			.container{
+				position: relative;
+				width: 300px;
+				height: 300px;
+				margin: 50px auto;
+				border: 2px solid #58a;
+				overflow: hidden;
+			}
+			.container > .banner{
+				width: 900px;
+				height: 300px;
+				/* margin-left: -100px; */
+				background-color: orange;
+				transition: 2s;
+			}
+			.container > .banner > li{
+				float: left;
+				width: 300px;
+				height: 300px;
+			}
+			.container > .banner > li:nth-child(1){
+				background-color: purple;
+			}
+			.container > .banner > li:nth-child(2){
+				background-color: hotpink;
+			}
+			.container > .banner > li:nth-child(3){
+				background-color: #58a;
+			}
+			.container > label{
+				position: absolute;
+			}
+			.container > label:nth-child(1){
+				top: 0;
+				left: 0;
+			}
+			.container > label:nth-child(2){
+				top: 40px;
+				left: 0;
+			}
+			.container > label:nth-child(3){
+				top: 80px;
+				left: 0;
+			}
+			#banner1:checked ~ .banner{
+				margin-left: 0;
+			}
+			#banner2:checked ~ .banner{
+				margin-left: -300px;
+			}
+			#banner3:checked ~ .banner{
+				margin-left: -900px;
+			}
+		</style>
+	</head>
+	<body><!--写给用户看的内容-->
+		<div class="container">
+			<label class="one" for="banner1">1</label>
+			<label for="banner2">2</label>
+			<label for="banner3">3</label>
+			<input id="banner1" type="checkbox" name="banner">
+			<input id="banner2" type="checkbox" name="banner">
+			<input id="banner3" type="checkbox" name="banner">	
+			<ul class="banner">
+				<li>
+					<img src="./images/1.jpg">
+				</li>
+				<li>
+					<img src="./images/2.jpg">
+				</li>
+				<li>
+					<img src="./images/3.jpg">
+				</li>
+			</ul>
+		</div>
+	</body>
+</html><!--html结束标签-->

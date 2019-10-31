@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Generator" content="EditPlus®">
+		<meta name="Author" content="">
+		<meta name="Keywords" content="">
+		<meta name="Description" content="">
+		<title>Document</title>
+		<style>
+			* {
+				margin:0;
+			}
+			body {
+				 background-color: #000;
+			}
+			.container {
+				position:relative;
+				filter: 
+					blur(20px)
+					contrast(20);
+				width:800px;
+				height:300px;
+				margin:50px auto;
+				background-color:black;
+			}
+			.container>div {
+				position:absolute;
+				top:0;
+				left:0;
+				right:0;
+				bottom:0;
+				width: 100px;
+				height: 100px;
+				margin:auto;
+				background-color: #fff;
+				border-radius: 50%;
+			}
+			.roll1{
+				transform: translateX(-200px);
+			}
+			.roll3 {
+				transform: translateX(200px);
+				box-shadow: 200px 0px 0px 0px white;
+				animation: roll 5s linear infinite alternate;
+			
+			}
+			@keyframes roll {
+				to {
+					transform:translateX(-600px);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="roll1"></div>
+			<div class="roll2"></div>
+			<div class="roll3"></div>
+		</div>
+	</body>
+</html>

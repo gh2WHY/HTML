@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>摩天轮</title>
+        <style>
+            * {
+                margin: 0;
+            }
+            .bgc {
+                position: relative;
+                width:800px;
+                height: 500px;
+                margin:60px auto;
+                background-image: url('./images/5.png');
+                background-size: cover;
+            }
+            .skywheel{
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                width: 360px;
+                height:360px;
+                margin: auto;
+                background-image: url("./images/2.png");
+                background-size: cover;
+                animation-name: demo;
+                animation-duration: 5s;
+                animation-timing-function: linear;
+                animation-fill-mode: backwards;
+                animation-iteration-count: infinite;
+            }
+            img {
+                width: 90px;
+                height: 90px;
+                animation: demo 5s linear infinite backwards;
+                animation-direction: reverse;
+            }
+            img:first-child {
+                position: absolute;
+                left: -6px;
+                top: 180px;
+            }
+            img:nth-child(2) {
+                position: absolute;
+                left: 140px;
+                top: -20px;
+            }
+            img:last-child {
+                position: absolute;
+                left:280px;
+                top: 180px;
+            }
+            @keyframes demo {
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="bgc">
+            <div class="skywheel">
+                <img src="./images/1.png" alt="图片">
+                <img src="./images/3.png" alt="图片">
+                <img src="./images/4.png" alt="图片">
+            </div>
+        </div>
+    </body>
+</html>

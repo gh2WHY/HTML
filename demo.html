@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="zh-ZG">
+	<head>
+		<title> </title>
+		<meta charset="utf-8">
+		<meta name="keywords" content=" "><!--网页的关键字-->
+		<meta name="descprition" content=" "><!--网页的简介-->
+		<style>
+			body,h2,ul{
+				margin:0;
+			}
+			ul{
+				padding-left:0;
+				list-style:none;
+			}
+			.main{	
+				width:600px;
+				height:750px;
+				background-color:#515151;
+				border:1px solid transparent;
+				margin:100px auto 0;
+			}
+			h2{
+				color:white;
+				margin-top:24px;
+				margin-left:226px;
+			}
+			.main fieldset:nth-child(1){
+				width:560px;
+				height:130px;
+				border:2px solid white;
+				margin-top:20px;
+				color:white;
+			}
+			.main fieldset:nth-child(2){
+				width:560px;
+				height:270px;
+				border:2px solid white;
+				margin-top:20px;
+				color:white;
+			}
+			.main fieldset:nth-child(3){
+				width:560px;
+				height:130px;
+				border:2px solid white;
+				margin-top:20px;
+				color:white;
+			}
+			.btu{
+				margin-top:15px;
+				margin-left:250px;
+			}
+			.tit1 input{
+				width:168px;
+				height:24px;
+			}
+			.tit1 ul>li{
+				float:left;
+			}
+			.tit1 ul>li:nth-child(1){
+				margin-top:5px;
+				margin-left:10px;
+			}
+			.tit1 ul>li:nth-child(2){
+				margin-top:5px;
+				margin-left:69px;
+			}
+			.tit1 ul>li:nth-child(3){
+				margin-top:27px;
+				margin-left:26px;
+			}
+			.tit1 ul>li:nth-child(4){
+				margin-top:27px;
+				margin-left:68px;
+			}
+			.on{
+				width:168px;
+				height:24px;
+			}
+			.in{
+				width:210px;
+				height:20px;
+			}
+			.tit2 ul>li{
+				float:left;
+			}
+			.tit2 ul>li:nth-child(1){
+				margin-top:5px;
+				margin-left:10px;
+			}
+			.tit2 ul>li:nth-child(2){
+				margin-top:5px;
+				margin-left:69px;
+			}
+			.tit2 ul>li:nth-child(3){
+				margin-top:27px;
+				margin-left:26px;
+			}
+			.tit2 ul>li:nth-child(4){
+				margin-top:27px;
+				margin-left:68px;
+			}
+			.tit2 ul>li:nth-child(5){
+				margin-top:27px;
+				margin-left:20px;
+			}
+			.tit2 ul>li:nth-child(6){
+				margin-top:27px;
+				margin-left:19px;
+			}
+			.tit2 ul>li:nth-child(7){
+				margin-top:27px;
+				margin-left:19px;
+			}
+			.in1{
+				width:418px;
+				height:24px;
+			}
+			.in2{
+				width:50px;
+				height:24px;
+			}
+			.in3{
+				width:170px;
+				height:24px;
+			}
+			.tit3 ul>li{
+				float:left;
+			}
+			.tit3 ul>li:nth-child(1){
+				margin-top:5px;
+				margin-left:10px;
+			}
+			.tit3 ul>li:nth-child(2){
+				margin-top:23px;
+				margin-left:10px;
+			}
+			.tit3 ul>li:nth-child(3){
+				margin-top:23px;
+				margin-left:18px;
+			}
+			.tit3 ul>li:nth-child(4){
+				margin-top:23px;
+				margin-left:48px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<h2>增加快递信息</h2>
+			<form method="post" action="" class="min">
+				<fieldset class="tit1">
+					<legend>发货单</legend>
+						<ul>
+							<li>发货人:<input type="text"	name="username"></li>
+							<li>地址:<input type="text" name="userhome"></li>
+							<li>电话:<input type="text" name="username"></li>
+							<li>邮编:<input type="emial" name="useremial"></li>
+						<ul>
+				</fieldset>
+				<fieldset  class="tit2">
+					<legend>收货单</legend>
+						<ul>
+							<li>收货人:<input type="text" name="username" class="on"></li>
+							<li>地址:<input type="text" name="userhome" class="on"></li>
+							<li>电话:<input type="text" name="username" class="on"></li>
+							<li>邮编:<input type="emial" name="useremial" class="on"></li>
+							<li>地区:
+							<select name="place" class="in">
+							<option value="bei">北京</option>
+							<option value="hai">上海</option>
+							<option value="zhe">浙江</option>
+							</select></li>
+							<li>包装：
+							<input type="checkbox" name="baozhuang"		value="paper" id="paper"><label				for="paper">纸箱</label>
+							<input type="checkbox" name="baozhuang" value="mood" id="mood"><label for="mood">木箱</label>
+							<input type="checkbox" name="baozhuang" value="kuaididai" id="kuaididai"><label for="kuaididai">纸箱</label>
+							<input type="checkbox" name="baozhuang" value="qita" id="qita"><label for="qita">其他</label></li>
+							<li>付款方式：
+							<input type="radio" name="monmey"		value="xianjin" id="xianjin"><label			for="xianjin">现金</label>
+							<input type="radio" name="monmey" value="zhi" id="zhi"><label for="zhi">支付宝</label>
+							<input type="radio" name="monmey" value="weixin" id="weixin"><label for="weixin">微信</label>
+							<input type="radio" name="monmey" value="at" id="at"><label for="at">ATM</label></li>
+						</ul>
+				</fieldset>
+				<fieldset  class="tit3">
+					<legend>货物信息</legend>
+						<ul>
+							<li>货物名称:<input type="text" name="username" class="in1"></li>
+							<li>数量:<input type="text" name="userhome" class="in2"></li>
+							<li>重量:<input type="text"		name="username" class="in2"></li>
+							<li>发货时间:<input type="date"name="useremial" class="in3"></li>
+						</ul>
+				</fieldset>
+				<input type="button" name="selectfile" value="确定" class="btu">
+				<input type="button" name="selectfile" value="取消">
+			</form>
+		</div>
+	</body>
+</html>

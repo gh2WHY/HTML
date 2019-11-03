@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>风车</title>
+        <style>
+            body {
+                margin: 0;
+            }
+            .container {
+                position: relative;
+                perspective: 1000px;
+                transform-style: preserve-3d;
+                width: 150px;
+                height: 150px;
+                margin: 50px auto;
+                background-color: orange;
+                animation-name: demo;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+            .container>div {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                margin: auto;
+                width: 150px;
+                height: 150px;
+            }
+           .one {
+                background-color: #58a;
+                  transform: rotateX(120deg);
+                transform-origin: 50% 50%;
+
+            }
+          .two {
+                background-color: skyblue;
+                transform: rotateX(60deg);
+                transform-origin: 50% 50%;
+            }
+            @keyframes demo {
+                from {transform: rotateX(360deg);
+                transform-origin: 50% 50%;}
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="one"></div>
+            <div class="two"></div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>行走的小人</title>
+        <style>
+            * {
+                margin:0;
+            }
+            .container {
+                position: relative;
+                width: 80px;
+                height: 250px;
+                margin-top: 50px;
+                animation: all 5s linear forwards;
+            }
+            .head {
+                position: absolute;
+                left: 5px;
+                width: 70px;
+                height: 70px;
+                margin: 0 auto;
+                border-radius: 50%;
+                background-color: #58a;
+            }
+            .body {
+                position: absolute;
+                top: 70px;
+                left: 15px;
+                z-index: 3;
+                width: 50px;
+                height: 96px;
+                background-color:#CCC;
+            }
+            .arms {
+                position: absolute;
+                left: 33px;
+                top: 80px;
+                width: 15px;
+                height: 90px;
+                border-radius: 10px 10px 0 0;
+                background-color: pink;
+            }
+            .inside {
+                z-index: 1;
+                animation:armsRoll 1s linear infinite alternate ;
+                transform-origin:5px 0;
+            }
+            .outside {
+                z-index: 4;
+                animation:arms1Roll 1s linear infinite  alternate ;
+                transform-origin:5px 0;
+            }
+            .leg {
+                position: absolute;
+                top: 145px;
+                left: 24px;
+                width: 20px;
+                height: 110px;
+                background-color:skyblue;
+                transform-origin: left top;
+            }
+            .left {
+                z-index: 2;
+                animation:leftRoll 1s linear infinite;
+            }
+            .right {
+                z-index: 1;
+                animation:rightRoll 1s linear infinite;
+            }
+            @keyframes all {
+               /*  from {
+
+                } */
+                to {
+                    transform: translateX(1000px);
+                }
+            }
+            @keyframes rightRoll {
+                from{
+                    transform:rotate(20deg);
+                }
+                to{
+                    transform:rotate(-20deg);
+                }
+            }
+             @keyframes leftRoll {
+                  from{
+                    transform:rotate(-20deg);
+                }
+                to{
+                    transform:rotate(20deg);
+                }
+            }
+            @keyframes armsRoll {
+                from{
+                    transform:rotate(60deg);
+                }
+                to{
+                    transform:rotate(-60deg);
+                }
+            }
+             @keyframes arms1Roll {
+                from{
+                    transform:rotate(-60deg);
+                }
+                to{
+                    transform:rotate(60deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="head"></div>
+            <div class="body"></div>
+            <div class="arms inside"></div>
+            <div class="arms outside"></div>
+            <div class="leg right"></div>
+            <div class="leg left"></div>
+        </div>
+    </body>
+</html>

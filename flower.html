@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flower</title>
+    <style>
+        * {
+            margin:0;
+        }
+        body {
+            background-color: #000;
+        }
+        .container {
+            position:relative;
+            width: 400px;
+            height: 400px;
+            margin:80px auto;
+            background-color: #000;
+        }
+        .leaf {
+            width: 200px;
+            height: 200px;
+        }
+        .box1 {
+            position:absolute;
+            left:0;
+            top:0;
+            border-top-right-radius: 200px;
+            border-bottom-left-radius: 200px;
+            /* background-color:#f3a683; */
+            background-image: linear-gradient(rgba(243, 166, 131, 0.3),rgba(119, 139, 235, 0.3));
+        }
+        .box2{
+            position:absolute;
+            left:200px;
+            top:0;
+            border-top-left-radius: 200px;
+            border-bottom-right-radius: 200px;
+            background-image: linear-gradient(rgba(5, 231, 228, 0.3),rgba(119, 139, 235, 0.3));
+        }
+        .box3 {
+            position:absolute;
+            left:0;
+            top:200px;
+            border-top-left-radius: 200px;
+            border-bottom-right-radius: 200px;
+            background-image: linear-gradient(rgba(8, 95, 207, 0.3),rgba(60, 64, 198, 0.3));
+        }
+        .box4 {
+            position:absolute;
+            left:200px;
+            top:200px;
+            border-top-right-radius: 200px;
+            border-bottom-left-radius: 200px;
+            background-image: linear-gradient(rgba(67, 190, 133, 0.3),rgba(5, 196, 107, 0.3));
+        }
+        .box5 {
+            position:absolute;
+            left:100px;
+            top:-40px;
+            border-top-right-radius: 200px;
+            border-bottom-left-radius: 200px;
+            background-image: linear-gradient(rgba(255, 192, 72, 0.3),rgba(255, 211, 89, 0.3));
+            transform: rotate(45deg);
+            transform-origin: center;
+        }
+        .box6 {
+            position:absolute;
+            left:240px;
+            top:100px;
+            border-top-right-radius: 200px;
+            border-bottom-left-radius: 200px;
+            background-image: linear-gradient(rgba(255, 137, 117, 0.3),rgba(255, 63, 52, 0.3));
+            transform: rotate(135deg);
+            transform-origin: center;
+        }
+        .box7 {
+            position:absolute;
+            left:100px;
+            top:240px;
+            border-top-right-radius: 200px;
+            border-bottom-left-radius: 200px;
+            background-image: linear-gradient(rgba(67, 190, 133, 0.3),rgba(5, 196, 107, 0.3));
+            transform: rotate(45deg);
+            transform-origin: center;
+        }
+        .box8 {
+            position:absolute;
+            left:-40px;
+            top:100px;
+            border-top-right-radius: 200px;
+            border-bottom-left-radius: 200px;
+            background-image: linear-gradient(rgba(243, 166, 131, 0.3),rgba(119, 139, 235, 0.3));
+            transform: rotate(135deg);
+            transform-origin: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="leaf box1 "></div>
+        <div class="leaf box2 "></div>
+        <div class="leaf box3 "></div>
+        <div class="leaf box4 "></div>
+        <div class="leaf box5 "></div>
+        <div class="leaf box6 "></div>
+        <div class="leaf box7 "></div>
+        <div class="leaf box8 "></div>
+    </div>
+</body>
+</html>

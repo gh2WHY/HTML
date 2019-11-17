@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin:0;
+        }
+        body {
+            background-color: black;
+        }
+        .container {
+            /* position: relative;; */
+            width: 500px;
+            height: 500px;
+            margin:0 auto;
+            background-color:black;
+            border:1px solid black;
+        }
+        .left ,.right{
+            position: relative;
+            width: 250px;
+            height: 250px;
+            
+        }
+        .left {
+            /* position: absolute;
+            left:0px;
+            top:250px;
+             */ position: relative;
+             margin-top:250px;
+            border-top-right-radius: 250px;
+            border-bottom-left-radius: 250px;
+            background-color: #ccc;
+            z-index:3;
+        }
+        .right {
+            /* position: absolute;
+            left:250px;
+            top:250px; */
+            margin-top:-250px;
+            margin-left:250px;
+            border-top-left-radius: 250px;
+            border-bottom-right-radius: 250px;
+            background-color: #ccc;
+            z-index:3;
+           
+        }
+       .eye_left{
+            position: absolute;
+            top:58px;
+            left:57px;
+            width: 135px;
+            height: 135px;
+            border-radius: 50%;
+            border: 10px solid black;
+            background-image: linear-gradient(39deg, red 32%,black 32%,black 40%, red 30%,red 55%,black 55%,black 63%,red 60%,red 85%); 
+        }
+        .boll_left {
+            width: 71px;
+            height: 71px;
+            margin: 35px auto;
+            border-radius:50%;
+            background-image: radial-gradient(white 30%,black 30%,black 100%);
+        }
+        .eye_right{
+            position: absolute;
+            top:58px;
+            left:33px;
+            width: 135px;
+            height: 135px;
+            border-radius: 50%;
+            border: 10px solid black;
+            background-image: linear-gradient(-39deg, red 32%,black 32%,black 40%, red 30%,red 55%,black 55%,black 63%,red 60%,red 85%); 
+        }
+        .boll_right{
+            width: 71px;
+            height: 71px;
+            margin: 35px auto;
+            border-radius:50%;
+            background-image: radial-gradient(white 30%,black 30%,black 100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="eye_left">
+                <div class="boll_left"></div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="eye_right">
+                <div class="boll_right"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin:0;
+        }
+        button {
+            /* 如果改变父级的字号,按钮的尺寸就会发生相应的变化,不如将所有的尺寸设置为em单位,所有的值都会变成可缩放的 */
+            padding:.3px .8px;
+            background:#58a linear-gradient(hsla(0.0%,100%,.2),transparent);
+            border:1px solid #446d88;
+            border-radius: .2px;
+            box-shadow: 0 .05px .25px gray;
+            color:white;
+            text-shadow: 0 -.05em .05em #335166;
+            /* font-size:20px;字号做了规定之后如果父级大小改变则需要改变字体大小,所以字体大小也可用百分比来表示 */
+            font-size:125%;
+            /* line-height: 30px;  改变字号以后行高要做相应的修改,因此当某些值互相依赖时,应该把它们的相互关系用代码表示出来 */
+            line-height: 1.5;
+            margin:50px 50px;
+        }
+        .ok {
+            background-color: #6b0;
+        }
+        .cancel {
+            background-color: #c00;
+        }
+    </style>
+</head>
+<body>
+    <button class="ok">OK</button>
+    <button class="cancel">Cancel</button>
+</body>
+</html>

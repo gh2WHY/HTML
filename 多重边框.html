@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin:0;
+        }
+        /* 利用阴影来产生多重边框 */
+       .first {
+            width: 200px;
+            height: 200px;
+            margin:80px  auto;
+            background-color: yellowgreen;
+            box-shadow: 0 0 0 10px #65a,
+                        0 0 0 20px pink,
+                        0 2px 5px 30px rgba(0,0,0,.5);
+        }
+        /* 利用outline属性来产生双层边框 */
+        .second {
+            width: 100px;
+            height: 100px;
+            margin:80px  auto;
+            background-color: yellowgreen;
+            border:10px solid #65a;
+            /* border-radius: 20px; */
+            outline: 5px solid pink;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="first"></div>
+    <div class="second"></div>
+</body>
+</html>
+

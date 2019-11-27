@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin:0;
+        }
+        .container {
+            width: 150px;
+            /* height: 50px;  */
+            padding:.8em;
+            margin:50px auto;
+            background-color: #655;
+        }
+        .container > div {
+            background: tan;
+            border-radius: .8em;
+            padding:1em;
+            color:white;
+        }
+        .box {
+            width: 100px;
+            height: 50px;
+            background: tan;
+            border-radius: .8em;
+            padding: 1em;
+            margin:100px auto;
+            box-shadow: 0 0 0 .6em green;
+            outline:.6em solid pink;
+        }
+    </style>
+</head>
+<body>
+    <!-- 使用两个元素实现元素外围有一道边框,但只在内侧有圆角 -->
+    <div class="container">
+        <div>
+            接天莲叶无穷碧
+            映日荷花别样红
+        </div>
+    </div>
+    <div class="box"></div>
+</body>
+</html>

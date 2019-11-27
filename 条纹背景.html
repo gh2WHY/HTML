@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin:0;
+        }
+        .container {
+            display:flex;
+            flex-wrap: wrap;
+            /* align-content: space-around; */
+            width: 805px;
+            /* height: 400px;  */
+            margin:0 auto;
+            border:4px  solid #655;
+        }
+        .container > div{
+            width: 150px;
+            height: 100px;
+            margin-right:10px;
+            margin-bottom: 5px;
+        }
+        .box1 {
+            background: linear-gradient(#fb3,#58a);
+        }
+        .box2 {
+            /* 上半部分被纯色填充,下半部分被纯色填充(20%),只要中间的60%的区域是渐变的,通过改变两个参数可以改变渐变色的区域 */
+            background: linear-gradient(#fb3 20%,#58a 80%);
+        }
+        .box3 {
+            /* 色标具有相同的位置,会产生一个特别小的渐变区域,给人视觉上一种颜色突然变化而不是渐变效果 */
+            background: linear-gradient(#fb3 50%,#58a 50%);
+        }
+        .box4 {
+            /* 渐变是一种由代码生成的图像,可以通过改变背景的大小来改变渐变色的覆盖区域 */
+            /* 这种方式的缺陷是如果你想改变条纹的宽度,每次都必须修改两个值 */
+            background: linear-gradient(#fb3 50%,#58a 50%);
+            background-size:100% 30px;
+            background-repeat: no-repeat;
+            border:1px solid #000;
+        }
+        .box5 {
+            /* 如果我们把第二个色标的值设置为0,那么它的位置总是会被浏览器调整为前一个色标的位置值 */
+            background: linear-gradient(#fb3 30%,#58a 0);
+            background-size:100% 30px;
+        }
+        .box6 {
+            background: linear-gradient(#fb3 30%,#58a 0,#58a 56%,green 0);
+            background-size:100% 30px;
+        }
+        .box7 {
+            background: linear-gradient(to right, pink 30%,skyblue 0,skyblue 56%,purple 0);
+            background-size:30px 100%;
+        }
+        .box8 {
+            background: linear-gradient(45deg, pink 50%,skyblue 0);
+           
+        }
+        .box9 {
+            /* 8和9均没有实现我想要的斜向条纹重复的那种效果 */
+            background: linear-gradient(45deg, pink 50%,skyblue 0);
+            background-size:30px 30px;
+        }
+        .box10 {
+            background: linear-gradient(45deg,
+                pink 20%,
+                skyblue 0,
+                skyblue 40%,
+                pink 0,
+                pink 60%,
+                skyblue 0,
+                skyblue 80%,
+                pink 0,
+                pink 100%
+                );
+        }
+        .box11 {
+            /* 成功的创建了斜向条纹背景,但是看起来会比较细一些 */
+            background: linear-gradient(
+                45deg,
+                pink 25%,
+                skyblue 0,
+                skyblue 50%,
+                pink 0,
+                pink 75%,
+                skyblue 0
+            );
+            background-size:30px 30px;
+        }
+        .box12 {
+            /* 很遗憾的是,如果我们改变条纹的角度会出现很奇怪的效果 */
+            background: linear-gradient(
+                60deg,
+                pink 25%,
+                skyblue 0,
+                skyblue 50%,
+                pink 0,
+                pink 75%,
+                skyblue 0
+            );
+            background-size:30px 30px;
+        }
+        .box13 {
+            /* 通过使用repeating-linear-gradient属性来设置重复斜向渐变背景 */
+            background: repeating-linear-gradient(45deg, #fb3,#58a 30px);
+        }
+        .box14 {
+            /* 重复线性渐变可以完美的适用于条纹效果 */
+            background: repeating-linear-gradient(45deg, pink ,pink 15px,skyblue 0,skyblue 30px);
+        }
+        .box15 {
+            /* 如果我们使用重复线性渐变,则可以任意的改变角度也可形成完美的效果,成功解决了box12中出现的效果 */
+            background: repeating-linear-gradient(60deg, pink ,pink 15px,skyblue 0,skyblue 30px);
+        }
+        .box16 {
+            /* 在大多数情况下我们条纹背景并不需要差异很大的几种颜色组成,往往是同一种色系,只是在透明度方面有些许差异 */
+            /* 在这种情况下我们就可以为盒子添加一个纯色的背景,同时把半透明白色的条纹叠加在背景色之上就可以得到浅色系条纹 */
+            background:#655;
+            background-image: repeating-linear-gradient(
+                30deg,
+                rgba(250,250,250,.3),
+                rgba(250,250,250,.3) 15px,
+                transparent 0,
+                transparent 30px
+            );
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+        <div class="box7"></div>
+        <div class="box8"></div>
+        <div class="box9"></div>
+        <div class="box10"></div>
+        <div class="box11"></div>
+        <div class="box12"></div>
+        <div class="box13"></div>
+        <div class="box14"></div>
+        <div class="box15"></div>
+        <div class="box16"></div>
+    </div>
+</body>
+</html>

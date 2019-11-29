@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin:0;
+        }
+        .container {
+            display:flex;
+            flex-wrap: wrap;
+            width: 805px;
+            margin:0 auto;
+            border:4px  solid #655;
+        }
+        .container > div{
+            width: 150px;
+            height: 100px;
+            margin-right:10px;
+            margin-bottom: 5px;
+        }
+        /* 方格图案的实现 */
+        .box1 {
+            background:white;
+            background-image: linear-gradient( 90deg,
+                rgba(200, 0, 0, .5) 50%,transparent 0 ),
+            linear-gradient(
+                 rgba(200, 0, 0, .5) 50%,transparent 0
+            );
+            background-size: 30px 30px;
+        }
+        .box2 {
+            background: #58a;
+            background-image: 
+                linear-gradient(white 1px,transparent 0),
+                linear-gradient(90deg ,white 1px,transparent 0);
+            background-size: 30px 30px;
+        }
+        .box3 {
+            background:#58a;
+            background-image:
+                linear-gradient(white 2px, transparent 0),
+                linear-gradient(90deg, white 2px, transparent 0),
+                linear-gradient(hsla(0, 0%, 100%, .3) 1px, transparent 0),
+                linear-gradient(90deg, hsla(0, 0%, 100%, .3) 1px, transparent 0);
+            background-size: 75px 75px, 75px 75px,
+                            15px 15px, 15px 15px;
+        }
+        /* 波点图案的实现 */
+        .box5 {
+            background: #655;
+            background-image: radial-gradient(tan 30%,transparent 0);
+            background-size: 30px 30px;
+        }
+        /* 生成原点阵列图案 */
+        .box6 {
+            background: #655;
+            background-image:radial-gradient(tan 30%,transparent 0),
+                            radial-gradient(tan 30%,transparent 0);
+            background-size: 40px 40px;
+            background-position: 0 0,20px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+    </div>
+</body>
+</html>

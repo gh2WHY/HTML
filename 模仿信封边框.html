@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin:0;
+        }
+        div {
+            width: 200px;  
+            height: 90px;
+            padding:1em;
+           
+        }
+        .first {
+            margin: 10px auto;
+            border:.5em solid transparent;
+            background: 
+                linear-gradient(white,white) padding-box,
+                repeating-linear-gradient(-45deg,
+                red 0,red 12.5%,
+                transparent 0,transparent 25%,
+                #58a 0,#58a 37.5%,
+                transparent 0,transparent 50%)
+                0 /5em 5em;
+            animation: move 12s linear infinite;
+        }
+        .second {
+            margin: 100px auto;
+            border:16px solid transparent;
+            border-image:16
+            repeating-linear-gradient(-45deg,
+            red 0,red 1em,
+            transparent 0,transparent 2em,
+            #58a 0,#58a 3em,
+            transparent 0,transparent 4em
+            );
+            font-size:18px;
+        }
+        /* 蚂蚁行军效果 */
+        .third {
+            margin:180px auto;
+            border:1px solid transparent;
+            background:
+                linear-gradient(white,white) padding-box,
+                repeating-linear-gradient(-45deg,
+                black 0,black 25%,white 0,white 50%)
+                0/ .6em .6em;
+            animation: move 12s linear infinite;
+        }
+        @keyframes move {
+            to {
+                background-position: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="first"></div>
+    <div class="second">
+        Dear xiaoqiu,<br>
+            we are over,you must forget me and move on,
+            you know?
+    </div>
+    <div class="third"></div>
+</body>
+</html>

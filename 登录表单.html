@@ -26,7 +26,7 @@
         <table width="260" height="101" border="1" align="center" cellspacing="0" bordercolor="#FFFFFF"
             bgcolor="#CCCCCC">
             <caption>
-                <span class="STYLE7">��¼����</span>
+                <span class="STYLE7">我是��¼����</span>
             </caption>
             <tr>
                 <td width="254" height="36"><label>�û�����
@@ -51,14 +51,21 @@
         <p>&nbsp;</p>
     </form>
     <script>
-        var name = document.querySelector('.name'),
+        var Name = document.querySelector('.name'),
             password = document.querySelector('.password'),
-            submit_btn = document.querySelector('.submit')
+            submit_btn = document.querySelector('.submit');
+            console.log(Name,password);
         submit_btn.onclick = function() {
-            if(name.value === '' || password.value === '') {
-                alert('�������û���������!');
+            if(Name.value === '' || password.value === '') {
+                alert('用户名和密码不能为空!');
             }
         }
+
+        var name  = [1,2,3,4,5]
+        var names = [1,2,3,4,5]
+        console.log(name,name.length,typeof name)
+        console.log(names,names.length,typeof names)
+        window.name = 'hello world'
     </script>
 </body>
 

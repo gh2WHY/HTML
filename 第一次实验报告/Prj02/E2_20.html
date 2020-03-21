@@ -1,0 +1,65 @@
+　<HTML>
+　　<HEAD>
+　　<TITLE>表单演示</TITLE>
+　　</HEAD>
+　　<BODY>
+　　<FORM>
+　　<FIELDSET>
+<LEGEND><B>个人基本资料</B></LEGEND>
+<TABLE>
+<TR>
+<TD>姓名：</TD>
+<TD><INPUT TYPE="text" NAME="txtXM" SIZE="20"><TD>
+</TR>
+<TR>
+<TD>性别：</TD>
+<TD><INPUT TYPE="radio" NAME="radXB" CHECKED VALUE="男">男
+&nbsp; &nbsp; 
+<INPUT TYPE="radio" NAME="radXB" VALUE="女">女</TD>
+</TR>
+<TR>
+<TD>出生日期：</TD>
+<TD><INPUT TYPE="text" NAME="txtCSRQ" SIZE="20"><TD>
+</TR>
+<TR>
+<TD VALIGN="top">备注：</TD>
+<TD><TEXTAREA ROWS="3" NAME="txaBZ" COLS="20">团员</TEXTAREA>
+</TD>
+</TR>
+<TR>
+<TD>兴趣：</TD>
+<TD WIDTH="248" HEIGHT="36">
+<INPUT TYPE="checkbox" NAME="chkXQ1" VALUE="听音乐">听音乐&nbsp;
+<INPUT TYPE="checkbox" NAME="chkXQ2" VALUE="看小说">看小说&nbsp;
+<INPUT TYPE="checkbox" NAME="chkXQ3" VALUE="上网">上网</TD>
+</TR>
+</TABLE>
+</FIELDSET>
+<FIELDSET>
+<LEGEND><B>个人专业资料</B></LEGEND>
+<TABLE>
+<TR>
+<TD VALIGN="top">所学专业：</TD>
+<TD><SELECT SIZE="1" WIDTH="300" NAME="optZY">
+<OPTION SELECTED>计算机</OPTION>
+<OPTION>通信工程</OPTION>
+<OPTION>电气工程</OPTION>
+</SELECT></TD>
+</TR>
+<TR>
+<TD VALIGN="top">所学课程：</TD>
+<TD><SELECT SIZE="3" WIDTH="200" NAME="optKC" MULTIPLE>
+<OPTION>计算机导论</OPTION>
+<OPTION>数据结构</OPTION>
+<OPTION>数据库原理</OPTION>
+<OPTION>C++程序设计</OPTION>
+<OPTION>计算机网络</OPTION>
+</SELECT></TD>
+</TR>
+</TABLE>
+</FIELDSET><P>
+<INPUT TYPE="submit" VALUE="提交" NAME="btnOK">&nbsp;&nbsp;
+<INPUT TYPE="reset" VALUE="置初值" NAME="btnESC"></P>
+</FORM>
+</BODY>
+</HTML>

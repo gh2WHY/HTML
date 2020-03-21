@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 300px;
+            height: 200px;
+            position: absolute;
+            left:0;
+            right:0;
+            top:0;
+            bottom:0;
+            margin:30px auto;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>欢迎你登录</span>
+        <form name='loginForm'>
+            <span> 账号:</span>
+            <input type="text" name='account'> <br>
+            <span> 密码: </span>
+            <input type="password" name="password"> <br>
+            <input type="button" name="sumbit" value="提交" onclick="validata()">
+        </form>
+    </div>
+    <script>
+        function validata() {
+            acc = document.loginForm.account.value;
+            pas = document.loginForm.password.value; 
+            if(acc == '') {
+                window.alert('用户名不能为空！');
+                document.loginForm.account.focus();
+                return; //打断函数执行
+            }
+            if(pas == '') {
+                window.alert('密码不能为空！');
+                document.loginForm.pas.focus();
+                return;
+            }
+        }
+        
+    </script>
+</body>
+
+</html>

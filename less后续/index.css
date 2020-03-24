@@ -1,0 +1,28 @@
+.trangle1 {
+  width: 0;
+  left: 0;
+  display: block;
+  border: 20px solid transparent;
+  border-top-color: #00a8ff;
+}
+.trangle2 {
+  width: 0;
+  left: 0;
+  display: block;
+  border: 20px solid transparent;
+  border-bottom-color: pink;
+}
+.trangle3 {
+  width: 0;
+  left: 0;
+  display: block;
+  border: 20px solid transparent;
+  border-right-color: purple;
+}
+.trangle4 {
+  width: 0;
+  left: 0;
+  display: block;
+  border: 20px solid transparent;
+  border-left-color: #4cd137;
+}

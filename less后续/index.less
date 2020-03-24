@@ -1,0 +1,95 @@
+// @color: red;
+// .size{
+//     width: 100px;
+//     height: 100px;
+// }
+// .color{
+//     background-color: red;
+//     color:white;
+// }
+// .box{
+//     .size();
+//     .color();
+//     // @color: skyblue;
+//    background-color:@color; // 因为.box自己作用于中有同名变量,就会先用自己作用于内变量的值
+ 
+// }
+// .wrap{
+//     .size();
+//     .color();
+//     width: 100px;
+//     height: 100px;
+//     // background-color:@color; // .wrap自己作用于内没有color变量,所以用上一次作用域重点变量
+// }
+
+// 三角形公用代码
+.sjx(@_, @color, @size) {
+    width: 0;
+    left: 0;
+    display: block;
+    border: @size solid transparent;
+  }
+  
+  // 左三角形
+  .sjx(l, @color, @size) {
+    border-left-color: @color;
+  }
+  
+  // 右三角形
+  .sjx(r, @color, @size) {
+    border-right-color: @color;
+  }
+  
+  // 上三角形
+  .sjx(t, @color, @size) {
+    border-top-color: @color;
+  }
+  
+  // 下三角形
+  .sjx(b, @color, @size) {
+    border-bottom-color: @color;
+  }
+  
+  .trangle1 {
+    .sjx(t,#00a8ff, 20px)
+  }
+  .trangle2 {
+    .sjx(b, pink, 20px)
+  }
+  .trangle3 {
+    .sjx(r, purple, 20px)
+  }
+  .trangle4 {
+    .sjx(l,#4cd137, 20px)
+  }
+// .border {
+//     border:1px solid #58a;
+// }
+// .container {
+//     width: 200px;
+//     height: 300px;
+//     .border();
+//     ul {
+//         list-style: none;
+//         padding:0;
+//         margin:0;
+//         .border();
+//         li {
+//             width: 100px;
+//             height: 80px;
+//             background-color: khaki;
+//             margin-top:20px;
+//             span {
+//                 font-size: 20px;
+//                 color:green;
+//             }
+//         }
+//     }
+//     .box {
+//         width: 200px;
+//         height: 50px;
+//         .border();
+//         margin-top:30px;
+//         background-color: lightcoral;
+//     }
+// }

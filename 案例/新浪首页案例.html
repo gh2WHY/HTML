@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		nav {
+			height: 41px;
+			background-color: #fcfcfc;
+			border-top: 3px solid #FF8500;
+			border-bottom: 1px solid #EDEEF0;
+		}
+		nav a {
+			text-decoration: none;
+			font-size: 14px;
+			line-height: 41px;
+			color: #4c4c4c;
+			/* a是行内元素，不能设置大小，所以需要转为行内块元素 */
+			display: inline-block;
+			padding: 0 15px;
+		}
+		nav a:hover {
+			background-color: #ccc;
+			color: orange;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<a href="#">设为首页</a>
+		<a href="#">手机新浪网</a>
+		<a href="#">移动客户端</a>
+		<a href="#">登录</a>
+		<a href="#">网站导航</a>
+	</nav>
+</body>
+</html>

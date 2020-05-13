@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Author" content="">
+		<title>Document</title>
+		<style>
+			* {
+				margin:0;
+			}
+			ul li {
+				list-style:none;
+				height:50px;
+				width:200px;
+				margin:20px;
+				font-size:20px;
+				font-weight:700;
+				line-height:50px;
+				text-align:center;
+				text-shadow:0px 1px 1px #ffffff;
+				background-color:#b0e090;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>让我们荡起双桨</li>
+			<li>小船儿推开波浪</li>
+			<li>海面倒映着</li>
+			<li>美丽的白塔</li>
+		</ul>
+	</body>
+</html>

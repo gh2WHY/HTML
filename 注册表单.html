@@ -1,10 +1,9 @@
-<!DOCTYPE html
-    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<title>��¼����</title>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=bg2312" />
-    <title>�ޱ����ĵ�</title>
+    <meta charset="UTF-8">
+    <title>注册表单</title>
     <style type="text/css">
         .STYLE1 {
             font-size: 24px;
@@ -19,26 +18,26 @@
     <form id="form1" name="form1" method="post" action="">
         <table width="338" border="1" align="center" cellspacing="0" bordercolor="#333333" bgcolor="#FFFFFF">
             <caption>
-                <span class="STYLE1">ע�����</span>
+                <span class="STYLE1">注册表单</span>
             </caption>
             <tr>
-                <td width="101" height="27">����:</td>
+                <td width="101" height="27">姓名</td>
                 <td width="221">
                     <label>
-                        <input type="text" placeholder="����������" id="name">
+                        <input type="text" placeholder="请输入你的姓名" id="name">
                     </label></td>
             </tr>
             <tr>
-                <td height="27">�Ա�:</td>
+                <td height="27">性别:</td>
                 <td>
                     <label>
-                        <input name="radiobutton" type="radio"  checked="checked" />��
-                        <input type="radio" name="radiobutton"  />Ů
+                        <input name="radiobutton" type="radio"  checked="checked" />男
+                        <input type="radio" name="radiobutton"  />女
                     </label>
                 </td>
             </tr>
             <tr>
-                <td height="25">��������:</td>
+                <td height="25">出生日期:</td>
                 <td> 
                     <label>
                         <input type="date" name="textfield" />
@@ -46,24 +45,24 @@
                 </td>
             </tr>
             <tr>
-                <td height="25">��ѧרҵ:</td>
+                <td height="25">所学专业:</td>
                 <td>
                     <select name='select'>
-                        <option value="">���簲ȫ��ִ��</option>
-                        <option value="">��Ϣ��ȫ</option>
-                        <option value="">��������</option>
-                        <option value="">�������ѧ�뼼��</option>
+                        <option value="">网络安全与执法</option>
+                        <option value="">计算机科学与技术</option>
+                        <option value="">物联网</option>
+                        <option value="">信息安全</option>
                     </select>
                 </td>
             </tr>
             <tr>
-                <td rowspan="4">��ѧ�γ�:</td>
+                <td rowspan="4">所学课程:</td>
                 <td height="25">
                     <select name='select' multiple='multiple'>
-                        <option value="">���������</option>
-                        <option value="">���������ϵͳ</option>
-                        <option value="">�����ԭ��</option>
-                        <option value="">���ݽṹ</option>
+                        <option value="">数据结构</option>
+                        <option value="">计算机网络</option>
+                        <option value="">操作系统</option>
+                        <option value="">C语言</option>
                     </select>
                 </td>
             </tr>
@@ -71,31 +70,31 @@
             <tr></tr>
             <tr></tr>
             <tr>
-                <td height="30">��ע:</td>
+                <td height="30">备注</td>
                 <td>
                     <textarea  cols="25" rows="5"> 
                     </textarea>
                 </td>
             </tr>
             <tr>
-                <td height="27">��Ȥ����:</td>
+                <td height="27">兴趣爱好:</td>
                 <td>
                     <label>
-                        <input type="checkbox"  />����Ӱ
+                        <input type="checkbox"  />阅读
                     </label>
                     <label>
-                        <input type="checkbox" />�Ķ�
+                        <input type="checkbox" />电影
                     </label>
                     <label>
-                        <input type="checkbox"   />������
+                        <input type="checkbox"   />听音乐
                     </label>  
                 </td>
             </tr>
             <tr>
                 <td height="27" colspan="2">
                     <div class="button">
-                        <button id="submit">�ύ</button>
-                        <button >����</button>
+                        <button id="submit">注册</button>
+                        <button >重置</button>
                     </div>  
                 </td>
             </tr>
